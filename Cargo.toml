@@ -1,0 +1,36 @@
+[package]
+name = "slicing-server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-graphql = "5.0.1"
+cgmath = "0.18.0"
+dashmap = "5.4.0"
+eyre = "0.6.8"
+lazy_static = "1.4.0"
+nanoid = "0.4.0"
+nix = "0.26.1"
+tempfile = "3.3.0"
+tokio = { version = "1.22.0", features = ["full"] }
+tracing = "0.1.37"
+genawaiter = { version = "0.99.1", default-features = false, features = ["futures03"] }
+nom = "7.1.1"
+reqwest = { version = "0.11.13", features = ["serde_json", "json", "rustls-tls-webpki-roots", "stream"], default-features = false }
+serde_json = "1.0.89"
+serde = "1.0.148"
+directories = "4.0.1"
+futures-util = "0.3.25"
+tracing-subscriber = { version = "0.3.16", features = ["env-filter"] }
+clap = { version = "4.0.29", features = ["derive"] }
+async-trait = "0.1"
+axum = "0.6.1"
+async-graphql-axum = "5.0.3"
+chrono = "0.4.23"
+toml = "0.5.9"
+jwt-simple = "0.11.2"
+self-host-space = { git = "https://github.com/D1plo1d/self-host-space-rust.git" }
+hyper = { version = "0.14.23", features = ["server"] }
+bs58 = "0.4.0"
